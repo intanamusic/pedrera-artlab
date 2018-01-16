@@ -1,5 +1,5 @@
-Flatdoc
-=======
+Overview
+========
 
 Flatdoc is a small JavaScript file that fetches Markdown files and renders them
 as full pages. Essentially, it's the easiest
@@ -13,36 +13,43 @@ way to make open source documentation from *Readme* files.
  * Just create an HTML file and deploy!
 
 
-Getting started
----------------
+Intana 
+------
 
-Create a file based on the template, which has a bare DOM, link to the
-scripts, and a link to a theme. It will look something like this (not exact).
-For GitHub projects, simply place this file in your [GitHub pages] branch and
-you're all good to go.
+Web: http://intanamusic.com/
+Facebook: https://www.facebook.com/intanamusic
+Twitter: https://twitter.com/intana_music
+Instagram: https://www.instagram.com/intana_music/
+Spotify: https://open.spotify.com/artist/1MJy23jZGgB8MH8h2lLz0u
 
-*In short: just download this file and upload it somewhere.*
-
-The main JS and CSS files are also available in [npm] and [bower].
-
-[Default theme template >][template]
-
-[Blank template >][blank]
-
-[bower]: http://bower.io/search/?q=flatdoc
-[npm]: https://www.npmjs.org/package/flatdoc
+Núria Moliner, Guillem Callejón, Jordi Mestres i Ricard Parera
 
 
-How it works
-------------
+FablabBCN + IAAC
+----------------
 
-Flatdoc is a hosted `.js` file (along with a theme and its assets) that you can
-add into any page hosted anywhere.
+FablabBCN
+
+Web: https://fablabbcn.org/
+Facebook: https://www.facebook.com/FabLab.BCN/
+Twitter: https://twitter.com/fablabbcn
+Instagram: https://www.instagram.com/fablabbcn/
+
+Marc Conangla: http://archive.fabacademy.org/archives/2017/fablabbcn/students/421/
+Esteban Giménez: http://archive.fabacademy.org/archives/2017/fablabbcn/students/271/
+Santi Fuentemilla: https://iaac.net/people/santi-fuentemilla/
 
 
+IAAC 
 
-Markdown extras
----------------
+Web: https://iaac.net/
+Facebook: https://www.facebook.com/IAACbcn/
+Twitter: https://twitter.com/iaac
+Instagram: https://www.instagram.com/iaacbcn/
+
+
+PedreraArtlab
+--------------
 
 Flatdoc offers a few harmless, unobtrusive extras that come in handy in building
 documentation sites.
