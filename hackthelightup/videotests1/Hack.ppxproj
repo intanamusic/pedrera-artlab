@@ -1,0 +1,415 @@
+<project>
+    <version>6</version>
+    <workspaces>
+        <workspace>
+            <name>root</name>
+            <items>
+                <item>content:videoPlayer.py 1</item>
+                <item>content:custom_osc.py</item>
+                <item>fixture:up</item>
+                <item>fixture:left</item>
+                <item>fixture:rigth</item>
+                <item>fixture:up 1</item>
+                <item>fixture:left 1</item>
+                <item>fixture:down</item>
+                <item>fixture:rigth 1</item>
+                <item>fixture:down 1</item>
+                <item>fixture:up 0</item>
+                <item>fixture:left 0</item>
+                <item>fixture:rigth 0</item>
+                <item>fixture:down 0</item>
+                <item>content:vv0</item>
+                <item>content:vv2</item>
+                <item>content:vv3</item>
+            </items>
+            <parameters>
+                <is_3D type="bool">0</is_3D>
+            </parameters>
+        </workspace>
+    </workspaces>
+    <fixtures>
+        <fixture>
+            <name>up</name>
+            <type>JS</type>
+            <num_lights>20</num_lights>
+            <positions>-0.35908 0.20724 0,-0.36908 0.20724 0,-0.37908 0.20724 0,-0.38908 0.20724 0,-0.39908 0.20724 0,-0.40908 0.20724 0,-0.41908 0.20724 0,-0.42908 0.20724 0,-0.43908 0.20724 0,-0.44908 0.20724 0,-0.45908 0.20724 0,-0.46908 0.20724 0,-0.47908 0.20724 0,-0.48908 0.20724 0,-0.49908 0.20724 0,-0.50908 0.20724 0,-0.51908 0.20724 0,-0.52908 0.20724 0,-0.53908 0.20724 0,-0.54908 0.20724 0,</positions>
+            <parameters>
+                <PPx_gamma_correction type="bool">1</PPx_gamma_correction>
+                <PPx_temporal_dithering type="bool">0</PPx_temporal_dithering>
+                <PPx_double_points type="bool">0</PPx_double_points>
+                <PPx_RGB_ordering type="stringoption">RGB</PPx_RGB_ordering>
+                <custom_ordering type="string">R,G,B</custom_ordering>
+                <Group type="string"></Group>
+                <light_positions type="jsvalue">[0.0949999988079071,0,0,0.08500000089406967,0,0,0.07500000298023224,0,0,0.06499999761581421,0,0,0.05499999970197678,0,0,0.04500000178813934,0,0,0.03500000014901161,0,0,0.02500000037252903,0,0,0.01500000152736902,0,0,0.005000001285225153,0,0,-0.004999998956918716,0,0,-0.0149999987334013,0,0,-0.02499999850988388,0,0,-0.03500000014901161,0,0,-0.04499999806284904,0,0,-0.05499999970197678,0,0,-0.06499999761581421,0,0,-0.07499999552965164,0,0,-0.08500000089406967,0,0,-0.0949999988079071,0,0]&#x0A;</light_positions>
+                <js_payload type="jsvalue">{&quot;LED_size&quot;:0.005,&quot;p&quot;:0.01,&quot;reversed&quot;:true,&quot;type&quot;:&quot;Line&quot;,&quot;w&quot;:20}&#x0A;</js_payload>
+            </parameters>
+            <transformation type="matrix4x4">       1,        0,        0,        0&#x0A;       0,        1,        0,        0&#x0A;       0,        0,        1,        0&#x0A;-0.45408,  0.20724,        0,        1</transformation>
+        </fixture>
+        <fixture>
+            <name>left</name>
+            <type>JS</type>
+            <num_lights>20</num_lights>
+            <positions>-0.555757 0.016051 0,-0.555909 0.0260499 0,-0.556061 0.0360487 0,-0.556212 0.0460475 0,-0.556364 0.0560464 0,-0.556516 0.0660452 0,-0.556668 0.0760441 0,-0.55682 0.0860429 0,-0.556972 0.0960417 0,-0.557124 0.106041 0,-0.557276 0.116039 0,-0.557428 0.126038 0,-0.55758 0.136037 0,-0.557732 0.146036 0,-0.557884 0.156035 0,-0.558036 0.166034 0,-0.558188 0.176032 0,-0.558339 0.186031 0,-0.558491 0.19603 0,-0.558643 0.206029 0,</positions>
+            <parameters>
+                <PPx_gamma_correction type="bool">1</PPx_gamma_correction>
+                <PPx_temporal_dithering type="bool">0</PPx_temporal_dithering>
+                <PPx_double_points type="bool">0</PPx_double_points>
+                <PPx_RGB_ordering type="stringoption">RGB</PPx_RGB_ordering>
+                <custom_ordering type="string">R,G,B</custom_ordering>
+                <Group type="string"></Group>
+                <light_positions type="jsvalue">[-0.0949999988079071,0,0,-0.08500000089406967,0,0,-0.07499999552965164,0,0,-0.06499999761581421,0,0,-0.05499999970197678,0,0,-0.04499999806284904,0,0,-0.03500000014901161,0,0,-0.02499999850988388,0,0,-0.0149999987334013,0,0,-0.004999998956918716,0,0,0.005000001285225153,0,0,0.01500000152736902,0,0,0.02500000037252903,0,0,0.03500000014901161,0,0,0.04500000178813934,0,0,0.05499999970197678,0,0,0.06499999761581421,0,0,0.07500000298023224,0,0,0.08500000089406967,0,0,0.0949999988079071,0,0]&#x0A;</light_positions>
+                <js_payload type="jsvalue">{&quot;LED_size&quot;:0.005,&quot;p&quot;:0.01,&quot;reversed&quot;:false,&quot;type&quot;:&quot;Line&quot;,&quot;w&quot;:20}&#x0A;</js_payload>
+            </parameters>
+            <transformation type="matrix4x4">-0.015193, 0.999884,        0,        0&#x0A;-0.999884, -0.015193,        0,        0&#x0A;       0,        0,        1,        0&#x0A; -0.5572,  0.11104,        0,        1</transformation>
+        </fixture>
+        <fixture>
+            <name>rigth</name>
+            <type>JS</type>
+            <num_lights>20</num_lights>
+            <positions>-0.354123 0.0156238 0,-0.364123 0.0155413 0,-0.374123 0.0154588 0,-0.384122 0.0153763 0,-0.394122 0.0152938 0,-0.404122 0.0152113 0,-0.414121 0.0151288 0,-0.424121 0.0150463 0,-0.434121 0.0149638 0,-0.44412 0.0148813 0,-0.45412 0.0147988 0,-0.464119 0.0147162 0,-0.474119 0.0146337 0,-0.484119 0.0145512 0,-0.494118 0.0144687 0,-0.504118 0.0143862 0,-0.514118 0.0143037 0,-0.524117 0.0142212 0,-0.534117 0.0141387 0,-0.544117 0.0140562 0,</positions>
+            <parameters>
+                <PPx_gamma_correction type="bool">1</PPx_gamma_correction>
+                <PPx_temporal_dithering type="bool">0</PPx_temporal_dithering>
+                <PPx_double_points type="bool">0</PPx_double_points>
+                <PPx_RGB_ordering type="stringoption">RGB</PPx_RGB_ordering>
+                <custom_ordering type="string">R,G,B</custom_ordering>
+                <Group type="string"></Group>
+                <light_positions type="jsvalue">[-0.0949999988079071,0,0,-0.08500000089406967,0,0,-0.07499999552965164,0,0,-0.06499999761581421,0,0,-0.05499999970197678,0,0,-0.04499999806284904,0,0,-0.03500000014901161,0,0,-0.02499999850988388,0,0,-0.0149999987334013,0,0,-0.004999998956918716,0,0,0.005000001285225153,0,0,0.01500000152736902,0,0,0.02500000037252903,0,0,0.03500000014901161,0,0,0.04500000178813934,0,0,0.05499999970197678,0,0,0.06499999761581421,0,0,0.07500000298023224,0,0,0.08500000089406967,0,0,0.0949999988079071,0,0]&#x0A;</light_positions>
+                <js_payload type="jsvalue">{&quot;LED_size&quot;:0.005,&quot;p&quot;:0.01,&quot;reversed&quot;:false,&quot;type&quot;:&quot;Line&quot;,&quot;w&quot;:20}&#x0A;</js_payload>
+            </parameters>
+            <transformation type="matrix4x4">-0.999965, -0.00825044,        0,        0&#x0A;0.00825044, -0.999965,        0,        0&#x0A;       0,        0,        1,        0&#x0A;-0.44912,  0.01484,        0,        1</transformation>
+        </fixture>
+        <fixture>
+            <name>down</name>
+            <type>JS</type>
+            <num_lights>20</num_lights>
+            <positions>-0.344299 0.0160552 0,-0.344478 0.0260536 0,-0.344657 0.036052 0,-0.344836 0.0460504 0,-0.345015 0.0560488 0,-0.345194 0.0660472 0,-0.345373 0.0760456 0,-0.345552 0.086044 0,-0.345731 0.0960424 0,-0.34591 0.106041 0,-0.34609 0.116039 0,-0.346269 0.126038 0,-0.346448 0.136036 0,-0.346627 0.146034 0,-0.346806 0.156033 0,-0.346985 0.166031 0,-0.347164 0.17603 0,-0.347343 0.186028 0,-0.347522 0.196026 0,-0.347701 0.206025 0,</positions>
+            <parameters>
+                <PPx_gamma_correction type="bool">1</PPx_gamma_correction>
+                <PPx_temporal_dithering type="bool">0</PPx_temporal_dithering>
+                <PPx_double_points type="bool">0</PPx_double_points>
+                <PPx_RGB_ordering type="stringoption">RGB</PPx_RGB_ordering>
+                <custom_ordering type="string">R,G,B</custom_ordering>
+                <Group type="string"></Group>
+                <light_positions type="jsvalue">[-0.0949999988079071,0,0,-0.08500000089406967,0,0,-0.07499999552965164,0,0,-0.06499999761581421,0,0,-0.05499999970197678,0,0,-0.04499999806284904,0,0,-0.03500000014901161,0,0,-0.02499999850988388,0,0,-0.0149999987334013,0,0,-0.004999998956918716,0,0,0.005000001285225153,0,0,0.01500000152736902,0,0,0.02500000037252903,0,0,0.03500000014901161,0,0,0.04500000178813934,0,0,0.05499999970197678,0,0,0.06499999761581421,0,0,0.07500000298023224,0,0,0.08500000089406967,0,0,0.0949999988079071,0,0]&#x0A;</light_positions>
+                <js_payload type="jsvalue">{&quot;LED_size&quot;:0.005,&quot;p&quot;:0.01,&quot;reversed&quot;:false,&quot;type&quot;:&quot;Line&quot;,&quot;w&quot;:20}&#x0A;</js_payload>
+            </parameters>
+            <transformation type="matrix4x4">-0.0179033,  0.99984,        0,        0&#x0A;-0.99984, -0.0179033,        0,        0&#x0A;       0,        0,        1,        0&#x0A;  -0.346,  0.11104,        0,        1</transformation>
+        </fixture>
+        <fixture>
+            <name>up 0</name>
+            <type>JS</type>
+            <num_lights>20</num_lights>
+            <positions>-0.17346 -0.21384 0,-0.16346 -0.21384 0,-0.15346 -0.21384 0,-0.14346 -0.21384 0,-0.13346 -0.21384 0,-0.12346 -0.21384 0,-0.11346 -0.21384 0,-0.10346 -0.21384 0,-0.09346 -0.21384 0,-0.08346 -0.21384 0,-0.07346 -0.21384 0,-0.06346 -0.21384 0,-0.05346 -0.21384 0,-0.04346 -0.21384 0,-0.03346 -0.21384 0,-0.02346 -0.21384 0,-0.01346 -0.21384 0,-0.00346 -0.21384 0,0.00654 -0.21384 0,0.01654 -0.21384 0,</positions>
+            <parameters>
+                <PPx_gamma_correction type="bool">1</PPx_gamma_correction>
+                <PPx_temporal_dithering type="bool">0</PPx_temporal_dithering>
+                <PPx_double_points type="bool">0</PPx_double_points>
+                <PPx_RGB_ordering type="stringoption">RGB</PPx_RGB_ordering>
+                <custom_ordering type="string">R,G,B</custom_ordering>
+                <Group type="string"></Group>
+                <light_positions type="jsvalue">[-0.0949999988079071,0,0,-0.08500000089406967,0,0,-0.07499999552965164,0,0,-0.06499999761581421,0,0,-0.05499999970197678,0,0,-0.04499999806284904,0,0,-0.03500000014901161,0,0,-0.02499999850988388,0,0,-0.0149999987334013,0,0,-0.004999998956918716,0,0,0.005000001285225153,0,0,0.01500000152736902,0,0,0.02500000037252903,0,0,0.03500000014901161,0,0,0.04500000178813934,0,0,0.05499999970197678,0,0,0.06499999761581421,0,0,0.07500000298023224,0,0,0.08500000089406967,0,0,0.0949999988079071,0,0]&#x0A;</light_positions>
+                <js_payload type="jsvalue">{&quot;LED_size&quot;:0.005,&quot;p&quot;:0.01,&quot;reversed&quot;:false,&quot;type&quot;:&quot;Line&quot;,&quot;w&quot;:20}&#x0A;</js_payload>
+            </parameters>
+            <transformation type="matrix4x4">       1,        0,        0,        0&#x0A;       0,        1,        0,        0&#x0A;       0,        0,        1,        0&#x0A;-0.07846, -0.21384,        0,        1</transformation>
+        </fixture>
+        <fixture>
+            <name>left 0</name>
+            <type>JS</type>
+            <num_lights>20</num_lights>
+            <positions>-0.180137 -0.405029 0,-0.180289 -0.39503 0,-0.180441 -0.385031 0,-0.180592 -0.375032 0,-0.180744 -0.365034 0,-0.180896 -0.355035 0,-0.181048 -0.345036 0,-0.1812 -0.335037 0,-0.181352 -0.325038 0,-0.181504 -0.315039 0,-0.181656 -0.305041 0,-0.181808 -0.295042 0,-0.18196 -0.285043 0,-0.182112 -0.275044 0,-0.182264 -0.265045 0,-0.182416 -0.255046 0,-0.182568 -0.245048 0,-0.182719 -0.235049 0,-0.182871 -0.22505 0,-0.183023 -0.215051 0,</positions>
+            <parameters>
+                <PPx_gamma_correction type="bool">1</PPx_gamma_correction>
+                <PPx_temporal_dithering type="bool">0</PPx_temporal_dithering>
+                <PPx_double_points type="bool">0</PPx_double_points>
+                <PPx_RGB_ordering type="stringoption">RGB</PPx_RGB_ordering>
+                <custom_ordering type="string">R,G,B</custom_ordering>
+                <Group type="string"></Group>
+                <light_positions type="jsvalue">[-0.0949999988079071,0,0,-0.08500000089406967,0,0,-0.07499999552965164,0,0,-0.06499999761581421,0,0,-0.05499999970197678,0,0,-0.04499999806284904,0,0,-0.03500000014901161,0,0,-0.02499999850988388,0,0,-0.0149999987334013,0,0,-0.004999998956918716,0,0,0.005000001285225153,0,0,0.01500000152736902,0,0,0.02500000037252903,0,0,0.03500000014901161,0,0,0.04500000178813934,0,0,0.05499999970197678,0,0,0.06499999761581421,0,0,0.07500000298023224,0,0,0.08500000089406967,0,0,0.0949999988079071,0,0]&#x0A;</light_positions>
+                <js_payload type="jsvalue">{&quot;LED_size&quot;:0.005,&quot;p&quot;:0.01,&quot;reversed&quot;:false,&quot;type&quot;:&quot;Line&quot;,&quot;w&quot;:20}&#x0A;</js_payload>
+            </parameters>
+            <transformation type="matrix4x4">-0.015193, 0.999884,        0,        0&#x0A;-0.999884, -0.015193,        0,        0&#x0A;       0,        0,        1,        0&#x0A;-0.18158, -0.31004,        0,        1</transformation>
+        </fixture>
+        <fixture>
+            <name>rigth 0</name>
+            <type>JS</type>
+            <num_lights>20</num_lights>
+            <positions>0.0295833 -0.406189 0,0.0294314 -0.39619 0,0.0292795 -0.386191 0,0.0291275 -0.376192 0,0.0289756 -0.366194 0,0.0288237 -0.356195 0,0.0286718 -0.346196 0,0.0285198 -0.336197 0,0.0283679 -0.326198 0,0.028216 -0.316199 0,0.028064 -0.306201 0,0.0279121 -0.296202 0,0.0277602 -0.286203 0,0.0276082 -0.276204 0,0.0274563 -0.266205 0,0.0273044 -0.256206 0,0.0271525 -0.246208 0,0.0270005 -0.236209 0,0.0268486 -0.22621 0,0.0266967 -0.216211 0,</positions>
+            <parameters>
+                <PPx_gamma_correction type="bool">1</PPx_gamma_correction>
+                <PPx_temporal_dithering type="bool">0</PPx_temporal_dithering>
+                <PPx_double_points type="bool">0</PPx_double_points>
+                <PPx_RGB_ordering type="stringoption">RGB</PPx_RGB_ordering>
+                <custom_ordering type="string">R,G,B</custom_ordering>
+                <Group type="string"></Group>
+                <light_positions type="jsvalue">[-0.0949999988079071,0,0,-0.08500000089406967,0,0,-0.07499999552965164,0,0,-0.06499999761581421,0,0,-0.05499999970197678,0,0,-0.04499999806284904,0,0,-0.03500000014901161,0,0,-0.02499999850988388,0,0,-0.0149999987334013,0,0,-0.004999998956918716,0,0,0.005000001285225153,0,0,0.01500000152736902,0,0,0.02500000037252903,0,0,0.03500000014901161,0,0,0.04500000178813934,0,0,0.05499999970197678,0,0,0.06499999761581421,0,0,0.07500000298023224,0,0,0.08500000089406967,0,0,0.0949999988079071,0,0]&#x0A;</light_positions>
+                <js_payload type="jsvalue">{&quot;LED_size&quot;:0.005,&quot;p&quot;:0.01,&quot;reversed&quot;:false,&quot;type&quot;:&quot;Line&quot;,&quot;w&quot;:20}&#x0A;</js_payload>
+            </parameters>
+            <transformation type="matrix4x4">-0.015193, 0.999884,        0,        0&#x0A;-0.999884, -0.015193,        0,        0&#x0A;       0,        0,        1,        0&#x0A; 0.02814,  -0.3112,        0,        1</transformation>
+        </fixture>
+        <fixture>
+            <name>down 0</name>
+            <type>JS</type>
+            <num_lights>26</num_lights>
+            <positions>-0.20098 -0.4064 0,-0.19098 -0.4064 0,-0.18098 -0.4064 0,-0.17098 -0.4064 0,-0.16098 -0.4064 0,-0.15098 -0.4064 0,-0.14098 -0.4064 0,-0.13098 -0.4064 0,-0.12098 -0.4064 0,-0.11098 -0.4064 0,-0.10098 -0.4064 0,-0.09098 -0.4064 0,-0.08098 -0.4064 0,-0.07098 -0.4064 0,-0.06098 -0.4064 0,-0.05098 -0.4064 0,-0.04098 -0.4064 0,-0.03098 -0.4064 0,-0.02098 -0.4064 0,-0.01098 -0.4064 0,-0.000979997 -0.4064 0,0.00902 -0.4064 0,0.01902 -0.4064 0,0.02902 -0.4064 0,0.03902 -0.4064 0,0.04902 -0.4064 0,</positions>
+            <parameters>
+                <PPx_gamma_correction type="bool">1</PPx_gamma_correction>
+                <PPx_temporal_dithering type="bool">0</PPx_temporal_dithering>
+                <PPx_double_points type="bool">0</PPx_double_points>
+                <PPx_RGB_ordering type="stringoption">RGB</PPx_RGB_ordering>
+                <custom_ordering type="string">R,G,B</custom_ordering>
+                <Group type="string"></Group>
+                <light_positions type="jsvalue">[-0.125,0,0,-0.1150000020861626,0,0,-0.1049999967217445,0,0,-0.0949999988079071,0,0,-0.08500000089406967,0,0,-0.07500000298023224,0,0,-0.06499999761581421,0,0,-0.05499999970197678,0,0,-0.04500000178813934,0,0,-0.03500000014901161,0,0,-0.02500000037252903,0,0,-0.01499999966472387,0,0,-0.004999999888241291,0,0,0.004999999888241291,0,0,0.01499999966472387,0,0,0.02500000037252903,0,0,0.03500000014901161,0,0,0.04500000178813934,0,0,0.05499999970197678,0,0,0.06499999761581421,0,0,0.07500000298023224,0,0,0.08500000089406967,0,0,0.0949999988079071,0,0,0.1049999967217445,0,0,0.1150000020861626,0,0,0.125,0,0]&#x0A;</light_positions>
+                <js_payload type="jsvalue">{&quot;LED_size&quot;:0.005,&quot;p&quot;:0.01,&quot;reversed&quot;:false,&quot;type&quot;:&quot;Line&quot;,&quot;w&quot;:26}&#x0A;</js_payload>
+            </parameters>
+            <transformation type="matrix4x4">       1,        0,        0,        0&#x0A;       0,        1,        0,        0&#x0A;       0,        0,        1,        0&#x0A;-0.07598,  -0.4064,        0,        1</transformation>
+        </fixture>
+        <fixture>
+            <name>up 1</name>
+            <type>JS</type>
+            <num_lights>30</num_lights>
+            <positions>0.23062 0.19536 0,0.24062 0.19536 0,0.25062 0.19536 0,0.26062 0.19536 0,0.27062 0.19536 0,0.28062 0.19536 0,0.29062 0.19536 0,0.30062 0.19536 0,0.31062 0.19536 0,0.32062 0.19536 0,0.33062 0.19536 0,0.34062 0.19536 0,0.35062 0.19536 0,0.36062 0.19536 0,0.37062 0.19536 0,0.38062 0.19536 0,0.39062 0.19536 0,0.40062 0.19536 0,0.41062 0.19536 0,0.42062 0.19536 0,0.43062 0.19536 0,0.44062 0.19536 0,0.45062 0.19536 0,0.46062 0.19536 0,0.47062 0.19536 0,0.48062 0.19536 0,0.49062 0.19536 0,0.50062 0.19536 0,0.51062 0.19536 0,0.52062 0.19536 0,</positions>
+            <parameters>
+                <PPx_gamma_correction type="bool">1</PPx_gamma_correction>
+                <PPx_temporal_dithering type="bool">0</PPx_temporal_dithering>
+                <PPx_double_points type="bool">0</PPx_double_points>
+                <PPx_RGB_ordering type="stringoption">RGB</PPx_RGB_ordering>
+                <custom_ordering type="string">R,G,B</custom_ordering>
+                <Group type="string"></Group>
+                <light_positions type="jsvalue">[-0.1449999958276749,0,0,-0.1349999904632568,0,0,-0.1249999925494194,0,0,-0.114999994635582,0,0,-0.1049999967217445,0,0,-0.0949999988079071,0,0,-0.08499999344348907,0,0,-0.07499999552965164,0,0,-0.06499999761581421,0,0,-0.05499999597668648,0,0,-0.04499999433755875,0,0,-0.03499999642372131,0,0,-0.02499999664723873,0,0,-0.01499999593943357,0,0,-0.004999995697289705,0,0,0.005000004079192877,0,0,0.01500000432133675,0,0,0.02500000409781933,0,0,0.03500000387430191,0,0,0.04500000551342964,0,0,0.05500000342726707,0,0,0.06500000506639481,0,0,0.07500000298023224,0,0,0.08500000089406967,0,0,0.0950000062584877,0,0,0.1050000041723251,0,0,0.1150000020861626,0,0,0.125,0,0,0.135000005364418,0,0,0.1450000107288361,0,0]&#x0A;</light_positions>
+                <js_payload type="jsvalue">{&quot;LED_size&quot;:0.005,&quot;p&quot;:0.01,&quot;reversed&quot;:false,&quot;type&quot;:&quot;Line&quot;,&quot;w&quot;:30}&#x0A;</js_payload>
+            </parameters>
+            <transformation type="matrix4x4">       1,        0,        0,        0&#x0A;       0,        1,        0,        0&#x0A;       0,        0,        1,        0&#x0A; 0.37562,  0.19536,        0,        1</transformation>
+        </fixture>
+        <fixture>
+            <name>left 1</name>
+            <type>JS</type>
+            <num_lights>20</num_lights>
+            <positions>0.273943 0.00417102 0,0.273791 0.0141699 0,0.273639 0.0241687 0,0.273488 0.0341675 0,0.273336 0.0441664 0,0.273184 0.0541652 0,0.273032 0.0641641 0,0.27288 0.0741629 0,0.272728 0.0841617 0,0.272576 0.0941606 0,0.272424 0.104159 0,0.272272 0.114158 0,0.27212 0.124157 0,0.271968 0.134156 0,0.271816 0.144155 0,0.271664 0.154154 0,0.271512 0.164152 0,0.271361 0.174151 0,0.271209 0.18415 0,0.271057 0.194149 0,</positions>
+            <parameters>
+                <PPx_gamma_correction type="bool">1</PPx_gamma_correction>
+                <PPx_temporal_dithering type="bool">0</PPx_temporal_dithering>
+                <PPx_double_points type="bool">0</PPx_double_points>
+                <PPx_RGB_ordering type="stringoption">RGB</PPx_RGB_ordering>
+                <custom_ordering type="string">R,G,B</custom_ordering>
+                <Group type="string"></Group>
+                <light_positions type="jsvalue">[-0.0949999988079071,0,0,-0.08500000089406967,0,0,-0.07499999552965164,0,0,-0.06499999761581421,0,0,-0.05499999970197678,0,0,-0.04499999806284904,0,0,-0.03500000014901161,0,0,-0.02499999850988388,0,0,-0.0149999987334013,0,0,-0.004999998956918716,0,0,0.005000001285225153,0,0,0.01500000152736902,0,0,0.02500000037252903,0,0,0.03500000014901161,0,0,0.04500000178813934,0,0,0.05499999970197678,0,0,0.06499999761581421,0,0,0.07500000298023224,0,0,0.08500000089406967,0,0,0.0949999988079071,0,0]&#x0A;</light_positions>
+                <js_payload type="jsvalue">{&quot;LED_size&quot;:0.005,&quot;p&quot;:0.01,&quot;reversed&quot;:false,&quot;type&quot;:&quot;Line&quot;,&quot;w&quot;:20}&#x0A;</js_payload>
+            </parameters>
+            <transformation type="matrix4x4">-0.015193, 0.999884,        0,        0&#x0A;-0.999884, -0.015193,        0,        0&#x0A;       0,        0,        1,        0&#x0A;  0.2725,  0.09916,        0,        1</transformation>
+        </fixture>
+        <fixture>
+            <name>rigth 1</name>
+            <type>JS</type>
+            <num_lights>19</num_lights>
+            <positions>0.483587 0.00801043 0,0.483435 0.0180093 0,0.483283 0.0280081 0,0.483132 0.038007 0,0.48298 0.0480058 0,0.482828 0.0580046 0,0.482676 0.0680035 0,0.482524 0.0780023 0,0.482372 0.0880012 0,0.48222 0.098 0,0.482068 0.107999 0,0.481916 0.117998 0,0.481764 0.127997 0,0.481612 0.137995 0,0.48146 0.147994 0,0.481308 0.157993 0,0.481156 0.167992 0,0.481005 0.177991 0,0.480853 0.18799 0,</positions>
+            <parameters>
+                <PPx_gamma_correction type="bool">1</PPx_gamma_correction>
+                <PPx_temporal_dithering type="bool">0</PPx_temporal_dithering>
+                <PPx_double_points type="bool">0</PPx_double_points>
+                <PPx_RGB_ordering type="stringoption">RGB</PPx_RGB_ordering>
+                <custom_ordering type="string">R,G,B</custom_ordering>
+                <Group type="string"></Group>
+                <light_positions type="jsvalue">[-0.09000000357627869,0,0,-0.08000000566244125,0,0,-0.07000000029802322,0,0,-0.06000000238418579,0,0,-0.05000000447034836,0,0,-0.04000000283122063,0,0,-0.03000000305473804,0,0,-0.02000000327825546,0,0,-0.01000000350177288,0,0,-3.57627860658738e-09,0,0,0.009999996051192284,0,0,0.01999999582767487,0,0,0.02999999560415745,0,0,0.03999999538064003,0,0,0.04999999701976776,0,0,0.05999999493360519,0,0,0.06999999284744263,0,0,0.07999999821186066,0,0,0.08999999612569809,0,0]&#x0A;</light_positions>
+                <js_payload type="jsvalue">{&quot;LED_size&quot;:0.005,&quot;p&quot;:0.01,&quot;reversed&quot;:false,&quot;type&quot;:&quot;Line&quot;,&quot;w&quot;:19}&#x0A;</js_payload>
+            </parameters>
+            <transformation type="matrix4x4">-0.015193, 0.999884,        0,        0&#x0A;-0.999884, -0.015193,        0,        0&#x0A;       0,        0,        1,        0&#x0A; 0.48222,    0.098,        0,        1</transformation>
+        </fixture>
+        <fixture>
+            <name>down 1</name>
+            <type>JS</type>
+            <num_lights>20</num_lights>
+            <positions>0.285476 0.00398793 0,0.295476 0.00398793 0,0.305476 0.00398793 0,0.315476 0.00398793 0,0.325476 0.00398793 0,0.335476 0.00398793 0,0.345476 0.00398793 0,0.355476 0.00398793 0,0.365476 0.00398793 0,0.375476 0.00398793 0,0.385476 0.00398793 0,0.395476 0.00398793 0,0.405476 0.00398793 0,0.415476 0.00398793 0,0.425476 0.00398793 0,0.435476 0.00398793 0,0.445476 0.00398793 0,0.455476 0.00398793 0,0.465476 0.00398793 0,0.475476 0.00398793 0,</positions>
+            <parameters>
+                <PPx_gamma_correction type="bool">1</PPx_gamma_correction>
+                <PPx_temporal_dithering type="bool">0</PPx_temporal_dithering>
+                <PPx_double_points type="bool">0</PPx_double_points>
+                <PPx_RGB_ordering type="stringoption">RGB</PPx_RGB_ordering>
+                <custom_ordering type="string">R,G,B</custom_ordering>
+                <Group type="string"></Group>
+                <light_positions type="jsvalue">[-0.0949999988079071,0,0,-0.08500000089406967,0,0,-0.07499999552965164,0,0,-0.06499999761581421,0,0,-0.05499999970197678,0,0,-0.04499999806284904,0,0,-0.03500000014901161,0,0,-0.02499999850988388,0,0,-0.0149999987334013,0,0,-0.004999998956918716,0,0,0.005000001285225153,0,0,0.01500000152736902,0,0,0.02500000037252903,0,0,0.03500000014901161,0,0,0.04500000178813934,0,0,0.05499999970197678,0,0,0.06499999761581421,0,0,0.07500000298023224,0,0,0.08500000089406967,0,0,0.0949999988079071,0,0]&#x0A;</light_positions>
+                <js_payload type="jsvalue">{&quot;LED_size&quot;:0.005,&quot;p&quot;:0.01,&quot;reversed&quot;:false,&quot;type&quot;:&quot;Line&quot;,&quot;w&quot;:20}&#x0A;</js_payload>
+            </parameters>
+            <transformation type="matrix4x4">       1,        0,        0,        0&#x0A;       0,        1,        0,        0&#x0A;       0,        0,        1,        0&#x0A;0.380476, 0.00398793,        0,        1</transformation>
+        </fixture>
+    </fixtures>
+    <contents>
+        <content>
+            <name>custom_osc.py</name>
+            <type>PythonProgram</type>
+            <parameters>
+                <enabled type="bool">1</enabled>
+                <blend_mode type="stringoption">alpha</blend_mode>
+                <color_levels type="color">255, 255, 255, 255</color_levels>
+                <projection_type type="stringoption">flatsimple</projection_type>
+                <projection_parameters>
+                    <width type="float">1</width>
+                    <height type="float">1</height>
+                </projection_parameters>
+                <python_script type="filepath">/Users/marcconanglabermejo/Downloads/ProtoPixel-Create-2.2.1-nightly-develop-2018.02.09.4c35440/examples/scripting/custom_osc.py</python_script>
+                <params></params>
+            </parameters>
+            <transformation type="matrix4x4">0.283904,        0,        0,        0&#x0A;       0, 0.263558,        0,        0&#x0A;       0,        0,        1,        0&#x0A;-0.479952,  0.11506,        0,        1</transformation>
+        </content>
+        <content>
+            <name>videoPlayer.py 1</name>
+            <type>PythonProgram</type>
+            <parameters>
+                <enabled type="bool">1</enabled>
+                <blend_mode type="stringoption">alpha</blend_mode>
+                <color_levels type="color">255, 255, 255, 255</color_levels>
+                <projection_type type="stringoption">flatsimple</projection_type>
+                <projection_parameters>
+                    <width type="float">1</width>
+                    <height type="float">1</height>
+                </projection_parameters>
+                <python_script type="filepath">/Users/marcconanglabermejo/Desktop/videoPlayer.py</python_script>
+                <params></params>
+            </parameters>
+            <transformation type="matrix4x4">     0.2,        0,        0,        0&#x0A;       0,      0.2,        0,        0&#x0A;       0,        0,        1,        0&#x0A; 0.37826,   0.0264,        0,        1</transformation>
+        </content>
+        <content>
+            <name>vv0</name>
+            <type>py:video</type>
+            <parameters>
+                <enabled type="bool">1</enabled>
+                <blend_mode type="stringoption">alpha</blend_mode>
+                <color_levels type="color">255, 255, 255, 255</color_levels>
+                <projection_type type="stringoption">flatsimple</projection_type>
+                <projection_parameters>
+                    <width type="float">1</width>
+                    <height type="float">1</height>
+                </projection_parameters>
+                <params>
+                    <video_path type="filepath">$PROJECT_DIR/fixed_FLASH_corner4_50grey.mp4</video_path>
+                    <position type="float">0</position>
+                    <loop type="bool">0</loop>
+                    <autoplay type="bool">0</autoplay>
+                </params>
+            </parameters>
+            <transformation type="matrix4x4"> 0.37755,        0,        0,        0&#x0A;       0, 0.363767,        0,        0&#x0A;       0,        0,        1,        0&#x0A;-0.453992, 0.103092,        0,        1</transformation>
+        </content>
+        <content>
+            <name>vv2</name>
+            <type>py:video</type>
+            <parameters>
+                <enabled type="bool">1</enabled>
+                <blend_mode type="stringoption">alpha</blend_mode>
+                <color_levels type="color">255, 255, 255, 255</color_levels>
+                <projection_type type="stringoption">flatsimple</projection_type>
+                <projection_parameters>
+                    <width type="float">1</width>
+                    <height type="float">1</height>
+                </projection_parameters>
+                <params>
+                    <video_path type="filepath">$PROJECT_DIR/fixed_FLASH_corner4_MagentaCyan.mp4</video_path>
+                    <position type="float">0</position>
+                    <loop type="bool">0</loop>
+                    <autoplay type="bool">0</autoplay>
+                </params>
+            </parameters>
+            <transformation type="matrix4x4">0.427474,        0,        0,        0&#x0A;       0, 0.367249,        0,        0&#x0A;       0,        0,        1,        0&#x0A;  0.3828,  0.09504,        0,        1</transformation>
+        </content>
+        <content>
+            <name>vv3</name>
+            <type>py:video</type>
+            <parameters>
+                <enabled type="bool">1</enabled>
+                <blend_mode type="stringoption">alpha</blend_mode>
+                <color_levels type="color">255, 255, 255, 255</color_levels>
+                <projection_type type="stringoption">flatsimple</projection_type>
+                <projection_parameters>
+                    <width type="float">1</width>
+                    <height type="float">1</height>
+                </projection_parameters>
+                <params>
+                    <video_path type="filepath">$PROJECT_DIR/fixed_FLASH_corner4_YellowGreen.mp4</video_path>
+                    <position type="float">0.327018</position>
+                    <loop type="bool">0</loop>
+                    <autoplay type="bool">0</autoplay>
+                </params>
+            </parameters>
+            <transformation type="matrix4x4">0.324514,        0,        0,        0&#x0A;       0, 0.324431,        0,        0&#x0A;       0,        0,        1,        0&#x0A;-0.08316, -0.31944,        0,        1</transformation>
+        </content>
+    </contents>
+    <groups></groups>
+    <controllers>
+        <controller>
+            <name>controller</name>
+            <type>ProtoPixel</type>
+            <parameters>
+                <connected type="bool">1</connected>
+                <outlets type="customint">4</outlets>
+                <Device type="string">70:b3:d5:2d:b1:20</Device>
+                <device_data type="string">{&#x0A;   &quot;mac_addr&quot; : &quot;70:b3:d5:2d:b1:20&quot;&#x0A;}&#x0A;</device_data>
+            </parameters>
+            <outlets>
+                <outlet>
+                    <fixtures>
+                        <items>
+                            <item>fixture:up</item>
+                            <item>fixture:left</item>
+                            <item>fixture:rigth</item>
+                            <item>fixture:down</item>
+                            <item>fixture:up 0</item>
+                            <item>fixture:left 0</item>
+                            <item>fixture:rigth 0</item>
+                            <item>fixture:down 0</item>
+                            <item>fixture:up 1</item>
+                            <item>fixture:left 1</item>
+                            <item>fixture:rigth 1</item>
+                            <item>fixture:down 1</item>
+                        </items>
+                    </fixtures>
+                </outlet>
+                <outlet>
+                    <fixtures>
+                        <items></items>
+                    </fixtures>
+                </outlet>
+                <outlet>
+                    <fixtures>
+                        <items></items>
+                    </fixtures>
+                </outlet>
+                <outlet>
+                    <fixtures>
+                        <items></items>
+                    </fixtures>
+                </outlet>
+            </outlets>
+        </controller>
+        <controller>
+            <name>controller 0</name>
+            <type>ProtoPixel</type>
+            <parameters>
+                <connected type="bool">0</connected>
+                <outlets type="customint">4</outlets>
+                <Device type="string">none</Device>
+                <device_data type="string">{ &quot;mac_addr&quot; : &quot;33:30:3a:41:45:3a&quot; }</device_data>
+            </parameters>
+            <outlets>
+                <outlet>
+                    <fixtures>
+                        <items></items>
+                    </fixtures>
+                </outlet>
+                <outlet>
+                    <fixtures>
+                        <items></items>
+                    </fixtures>
+                </outlet>
+                <outlet>
+                    <fixtures>
+                        <items></items>
+                    </fixtures>
+                </outlet>
+                <outlet>
+                    <fixtures>
+                        <items></items>
+                    </fixtures>
+                </outlet>
+            </outlets>
+        </controller>
+    </controllers>
+</project>
