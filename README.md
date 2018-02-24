@@ -122,5 +122,7 @@ Instagram: https://www.instagram.com/iaacbcn/
 Flatdoc offers a few harmless, unobtrusive extras that come in handy in building
 documentation sites.
 
-(images/flatdoc.jpg)
 
+[](images/flatdoc.jpg)
+
+<img src="images/flatdoc.jpg" width=100% id="logo" alt="logo">
