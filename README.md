@@ -126,3 +126,4 @@ documentation sites.
 [](images/flatdoc.jpg)
 
 <img src="images/flatdoc.jpg" width=100% id="logo" alt="logo">
+<img src="images/peu.png" width=100% id="peu" alt="peu">
