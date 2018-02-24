@@ -8,7 +8,7 @@ Una actuació en directe on l’espai i la interpretació de sons i llums seran 
 
 El projecte, dirigit per Marc Conangla (dissenyador) i Núria Moliner (arquitecte i compositora), serà desenvolupat per un equip multidisciplinari coordinat per Santi Fuentemilla (arquitecte) i amb Esteban Giménez (enginyer i programador) com a col·laborador principal al Fab Lab Barcelona (IAAC) del Poblenou, i posat en escena el proper 26 d’abril a l’auditori de La Pedrera.
 
-PROCESS
+Process
 =======
 
 Coding
@@ -29,7 +29,7 @@ Prototypes
 ----------
 
 
-MISC
+Misc
 ====
 
 
@@ -122,4 +122,4 @@ Instagram: https://www.instagram.com/iaacbcn/
 Flatdoc offers a few harmless, unobtrusive extras that come in handy in building
 documentation sites.
 
-<p style="text-align:center;"><img src="/support/preview.jpg" id="logo" alt="logo"></p>
+<img src="/support/preview.jpg" id="logo" alt="logo">
