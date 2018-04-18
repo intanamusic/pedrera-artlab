@@ -1,0 +1,221 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%Title: EAGLE Drawing /home/nanu/Projects/pedrera-artlab/sensor.brd
+%%Creator: EAGLE
+%%Pages: 1
+%%BoundingBox: 0 0 159 120
+%%EndComments
+
+% Coordinate transfer:
+
+/EU { 254 div 0.072 mul } def
+/inch { 72 mul } def
+
+% Linestyle:
+
+1 setlinecap
+1 setlinejoin
+
+% Drawing functions:
+
+/l {  % draw a line
+   /lw exch def
+   /y2 exch def
+   /x2 exch def
+   /y1 exch def
+   /x1 exch def
+   newpath
+   x1 EU y1 EU moveto
+   x2 EU y2 EU lineto
+   lw EU setlinewidth
+   stroke
+   } def
+
+/h {  % draw a hole
+   /d  exch def
+   /y  exch def
+   /x  exch def
+   d 0 gt {
+     newpath
+     x EU y EU d 2 div EU 0 360 arc
+     currentgray dup
+     1 exch sub setgray
+     fill
+     setgray
+     } if
+   } def
+
+/b {  % draw a bar
+   /an exch def
+   /y2 exch def
+   /x2 exch def
+   /y1 exch def
+   /x1 exch def
+   /w2 x2 x1 sub 2 div EU def
+   /h2 y2 y1 sub 2 div EU def
+   gsave
+   x1 x2 add 2 div EU y1 y2 add 2 div EU translate
+   an rotate
+   newpath
+   w2     h2     moveto
+   w2 neg h2     lineto
+   w2 neg h2 neg lineto
+   w2     h2 neg lineto
+   closepath
+   fill
+   grestore
+   } def
+
+/c {  % draw a circle
+   /lw exch def
+   /rd exch def
+   /y  exch def
+   /x  exch def
+   newpath
+   lw EU setlinewidth
+   x EU y EU rd EU 0 360 arc
+   stroke
+   } def
+
+/a {  % draw an arc
+   /lc exch def
+   /ae exch def
+   /as exch def
+   /lw exch def
+   /rd exch def
+   /y  exch def
+   /x  exch def
+   lw rd 2 mul gt {
+     /rd rd lw 2 div add 2 div def
+     /lw rd 2 mul def
+     } if
+   currentlinecap currentlinejoin
+   lc setlinecap 0 setlinejoin
+   newpath
+   lw EU setlinewidth
+   x EU y EU rd EU as ae arc
+   stroke
+   setlinejoin setlinecap
+   } def
+
+/p {  % draw a pie
+   /d exch def
+   /y exch def
+   /x exch def
+   newpath
+   x EU y EU d 2 div EU 0 360 arc
+   fill
+   } def
+
+/edge { 0.20710678119 mul } def
+
+/o {  % draw an octagon
+   /an exch def
+   /dy exch def
+   /dx exch def
+   /y  exch def
+   /x  exch def
+   gsave
+   x EU y EU translate
+   an dx dy lt { 90 add /dx dy /dy dx def def } if rotate
+   newpath
+      0 dx 2 div sub EU                    0 dy edge  add EU moveto
+      0 dx dy sub 2 div sub dy edge sub EU 0 dy 2 div add EU lineto
+      0 dx dy sub 2 div add dy edge add EU 0 dy 2 div add EU lineto
+      0 dx 2 div add EU                    0 dy edge  add EU lineto
+      0 dx 2 div add EU                    0 dy edge  sub EU lineto
+      0 dx dy sub 2 div add dy edge add EU 0 dy 2 div sub EU lineto
+      0 dx dy sub 2 div sub dy edge sub EU 0 dy 2 div sub EU lineto
+      0 dx 2 div sub EU                    0 dy edge  sub EU lineto
+   closepath
+   fill
+   grestore
+   } def
+
+495613 124111 513613 142111 180.0 b
+479213 133111 18000 p
+453813 133111 18000 p
+428413 133111 18000 p
+403013 133111 18000 p
+377613 133111 18000 p
+352213 133111 18000 p
+326813 133111 18000 p
+301413 133111 18000 p
+276013 133111 18000 p
+250613 133111 18000 p
+225213 133111 18000 p
+199813 133111 18000 p
+174413 133111 18000 p
+149013 133111 18000 p
+149013 285511 18000 p
+174413 285511 18000 p
+199813 285511 18000 p
+225213 285511 18000 p
+250613 285511 18000 p
+276013 285511 18000 p
+301413 285511 18000 p
+326813 285511 18000 p
+352213 285511 18000 p
+377613 285511 18000 p
+403013 285511 18000 p
+428413 285511 18000 p
+453813 285511 18000 p
+479213 285511 18000 p
+504613 285511 18000 p
+428413 69611 14224 p
+403013 69611 14224 p
+212513 69611 13208 13208 0.0 o
+288713 69611 13208 13208 0.0 o
+331117 371611 13208 13208 180.0 o
+254917 371611 13208 13208 180.0 o
+331596 327703 13208 13208 180.0 o
+255396 327703 13208 13208 180.0 o
+121551 339251 141871 359571 270.0 b
+181711 349411 20320 p
+399944 338854 420264 359174 270.0 b
+460104 349014 20320 p
+157770 57793 178090 78113 90.0 b
+117930 67953 20320 p
+504613 133111 6000 h
+479213 133111 6000 h
+453813 133111 6000 h
+428413 133111 6000 h
+403013 133111 6000 h
+377613 133111 6000 h
+352213 133111 6000 h
+326813 133111 6000 h
+301413 133111 6000 h
+276013 133111 6000 h
+250613 133111 6000 h
+225213 133111 6000 h
+199813 133111 6000 h
+174413 133111 6000 h
+149013 133111 6000 h
+149013 285511 6000 h
+174413 285511 6000 h
+199813 285511 6000 h
+225213 285511 6000 h
+250613 285511 6000 h
+276013 285511 6000 h
+301413 285511 6000 h
+326813 285511 6000 h
+352213 285511 6000 h
+377613 285511 6000 h
+403013 285511 6000 h
+428413 285511 6000 h
+453813 285511 6000 h
+479213 285511 6000 h
+504613 285511 6000 h
+428413 69611 8128 h
+403013 69611 8128 h
+212513 69611 8128 h
+288713 69611 8128 h
+331117 371611 8128 h
+254917 371611 8128 h
+331596 327703 8128 h
+255396 327703 8128 h
+131711 349411 11684 h
+181711 349411 11684 h
+410104 349014 11684 h
+460104 349014 11684 h
+167930 67953 11684 h
+117930 67953 11684 h
