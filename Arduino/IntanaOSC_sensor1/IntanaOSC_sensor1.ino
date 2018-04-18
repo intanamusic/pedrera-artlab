@@ -6,15 +6,16 @@
 
 // **** ETHERNET SETTING ****
 byte mac[] = { 0x54, 0x34, 0x41, 0x30, 0x30, 0x31 };                                       
-IPAddress ip(169, 254, 97, 80);                        
-IPAddress Sendip(169, 254, 97, 83   );                        
+IPAddress ip(169, 254, 97, 81);                        
+IPAddress Sendip(169, 254, 97, 60);                        
 
 EthernetServer server(80);
-const unsigned int outPort = 2345;
+const unsigned int outPortProtopixel = 2345; 
+const unsigned int outPortSonicPi = 4559;
 #include <UIPEthernet.h>
 EthernetUDP Udp;
 
-CapacitiveSensor   cs_4_2 = CapacitiveSensor(4,6);        // 10M resistor between pins 4 & 2, pin 2 is sensor pin, add a wire and or foil if desired
+CapacitiveSensor   cs_4_2 = CapacitiveSensor(4,6);        // 1M resistor between pins 4 & 6, pin 6 is sensor pin, add a wire and or foil if desired
 
 
 void setup() {
@@ -32,12 +33,12 @@ void setup() {
 
 }
 
-void SendVDMXMessage(int sensorValue)
+int SendMessageP(char* message,int port,bool sensorValue) 
 {
   
-   OSCMessage msg("/vdmx/1");
-   msg.add((int32_t)sensorValue);
-   Udp.beginPacket(Sendip, 1235);
+   OSCMessage msg(message);
+   msg.add((int16_t)sensorValue);
+   Udp.beginPacket(Sendip, port);
    msg.send(Udp); // send the bytes to the SLIP stream
    Udp.endPacket(); // mark the end of the OSC Packet
    msg.empty(); 
@@ -51,14 +52,16 @@ void ReadCapacitiveSensor()
       long total1 =  cs_4_2.capacitiveSensor(30);
       Serial.println(total1);                  // print sensor output 1
       if(total1>1500)
-        SendVDMXMessage(1);
-  
+      {
+        SendMessageP("/waves1P/1",outPortProtopixel,true);
+        SendMessageP("/waves1S/1",outPortSonicPi,true);
+      }  
 }
 
 
 void loop() {
 
- // SendVDMXMessage(10);
+ // SendMessage(10);
   // listen for incoming clients
   EthernetClient client = server.available();
     ReadCapacitiveSensor();
@@ -76,12 +79,9 @@ void loop() {
       {
         char c = client.read();
 
-        // if you've gotten to the end of the line (received a newline
-        // character) and the line is blank, the http request has ended,
-        // so you can send a reply
-        if (c == '\n' && currentLineIsBlank) 
+         if (c == '\n' && currentLineIsBlank) 
         {
-          client.println("<html><title>Hello World!</title><body><h3>Hello World 3!</h3></body>");
+          client.println("<html><title>Hello World!</title><body><h3>Sensor n.1 ready!</h3> <br><a href=\"http://169.254.97.82\">click here for sensor n.2</a> <br><a href=\"http://169.254.97.83\">click here for sensor n.3</a></body>");
           break;
         }
 
