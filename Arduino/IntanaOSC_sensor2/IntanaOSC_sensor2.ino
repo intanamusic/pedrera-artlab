@@ -53,8 +53,8 @@ void ReadCapacitiveSensor()
       Serial.println(total1);                  // print sensor output 1
       if(total1>1500)
       {
-        SendMessageP("/waves2P/1",outPortProtopixel,true);
-        SendMessageP("/waves2S/1",outPortSonicPi,true);
+        SendMessageP("/column2P/1",outPortProtopixel,true);
+        SendMessageP("/column2S/1",outPortSonicPi,true);
       }  
 }
 

@@ -17,7 +17,7 @@ def draw():
     pass
 
 
-@content.OSC('/waves3P/1')
+@content.OSC('/column3P/1')
 def video_play(action):
     """
     This function handles OSC user input in address "/acc", with 3 arguments: x,y,z.
@@ -28,9 +28,9 @@ def video_play(action):
     print action
     
     if   action==True:
-        callParameterContent("columna3", "params:resume")
+        callParameterContent("wave3", "params:resume")
         print "Play"
     else:
-        callParameterContent("columna3", "params:pause")
+        callParameterContent("wave3", "params:pause")
         print "Pause"
 

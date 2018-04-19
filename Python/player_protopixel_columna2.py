@@ -1,3 +1,4 @@
+
 from openframeworks import *
 from protopixel import Content
 import numpy as np
@@ -17,7 +18,7 @@ def draw():
     pass
 
 
-@content.OSC('/waves2P/1')
+@content.OSC('/column2P/1')
 def video_play(action):
     """
     This function handles OSC user input in address "/acc", with 3 arguments: x,y,z.
@@ -28,9 +29,9 @@ def video_play(action):
     print action
     
     if   action==True:
-        callParameterContent("columna2", "params:resume")
+        callParameterContent("wave2", "params:resume")
         print "Play"
     else:
-        callParameterContent("columna2", "params:pause")
+        callParameterContent("wave2", "params:pause")
         print "Pause"
 
