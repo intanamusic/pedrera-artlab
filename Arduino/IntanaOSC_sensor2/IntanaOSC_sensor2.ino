@@ -6,7 +6,7 @@
 
 // **** ETHERNET SETTING ****
 byte mac[] = { 0x54, 0x34, 0x41, 0x30, 0x30, 0x31 };                                       
-IPAddress ip(192, 168, 133, 111);                        
+IPAddress ip(192, 168, 133, 112);                        
 IPAddress Sendip(192, 168, 133, 100);                        
 
 EthernetServer server(80);
@@ -53,8 +53,8 @@ void ReadCapacitiveSensor()
       Serial.println(total1);                  // print sensor output 1
       if(total1>1500)
       {
-        SendMessageP("/waves1P/1",outPortProtopixel,true);
-        SendMessageP("/waves1S/1",outPortSonicPi,true);
+        SendMessageP("/waves2P/1",outPortProtopixel,true);
+        SendMessageP("/waves2S/1",outPortSonicPi,true);
       }  
 }
 
@@ -81,7 +81,7 @@ void loop() {
 
          if (c == '\n' && currentLineIsBlank) 
         {
-          client.println("<html><title>Hello World!</title><body><h3>Sensor n.1 ready!</h3> <br><a href=\"http://192.168.133.112\">click here for sensor n.2</a> <br><a href=\"http://192.168.133.113\">click here for sensor n.3</a></body>");
+          client.println("<html><title>Hello World!</title><body><h3>Sensor n.2 ready!</h3> <br><a href=\"http://192.168.133.111\">click here for sensor n.1</a> <br><a href=\"http://192.168.133.113\">click here for sensor n.3</a></body>");
           break;
         }
 
