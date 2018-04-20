@@ -1,7 +1,7 @@
 Overview
 ========
 
-<b>When music and space blend together.<b>
+When music and space blend together.
 The music of the band INTANA and the innovation from Fab Lab Barcelona / Institut d’Arquitectura Avançada de Catalunya (IAAC) join together to present a unique and experimental concert.
 
 A live performance where space and the interpretation of sounds and lights will be one together, where technology and design will create an interactive atmosphere that will accompany and dialogue with the melodies and rhythms of the quartet formed by Núria Moliner, Guillem Callejón, Jordi Mestres and Ricard Parera.
