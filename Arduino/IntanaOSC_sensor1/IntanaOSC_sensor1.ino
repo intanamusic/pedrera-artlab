@@ -51,7 +51,7 @@ void ReadCapacitiveSensor()
       long start = millis();
       long total1 =  cs_4_2.capacitiveSensor(30);
       Serial.println(total1);                  // print sensor output 1
-      if(total1>1500)
+      if(total1>1200)
       {
         SendMessageP("/column1P/1",outPortProtopixel,true);
         SendMessageP("/column1S/1",outPortSonicPi,true);
