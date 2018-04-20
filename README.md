@@ -1,12 +1,13 @@
 Overview
 ========
 
-Quan la música i l’espai es troben.
-La música d’INTANA i la innovació del Fab Lab Barcelona / Institut d’Arquitectura Avançada de Catalunya (IAAC) s’uneixen per a presentar un concert únic i experimental. 
+<b>When music and space blend together.<b>
+The music of the band INTANA and the innovation from Fab Lab Barcelona / Institut d’Arquitectura Avançada de Catalunya (IAAC) join together to present a unique and experimental concert.
 
-Una actuació en directe on l’espai i la interpretació de sons i llums seran un de sol, on la tecnologia i el disseny crearan una atmosfera interactiva que acompanyi i dialogui amb les melodies i els ritmes del quartet format per Núria Moliner, Guillem Callejón, Jordi Mestres i Ricard Parera.
+A live performance where space and the interpretation of sounds and lights will be one together, where technology and design will create an interactive atmosphere that will accompany and dialogue with the melodies and rhythms of the quartet formed by Núria Moliner, Guillem Callejón, Jordi Mestres and Ricard Parera.
 
-El projecte, dirigit per Marc Conangla (dissenyador) i Núria Moliner (arquitecte i compositora), serà desenvolupat per un equip multidisciplinari coordinat per Santi Fuentemilla (arquitecte) i amb Esteban Giménez (enginyer i programador) com a col·laborador principal al Fab Lab Barcelona (IAAC) del Poblenou, i posat en escena el proper 26 d’abril a l’auditori de La Pedrera.
+The project, led by Marc Conangla (designer) and Núria Moliner (architect and composer), will be developed by a multidisciplinary team coordinated by Santi Fuentemilla (architect) and Esteban Giménez (engineer and programmer) with Fab Lab Barcelona (IAAC) as the main collaborator, and staged on April 26 in the auditorium of La Pedrera, Barcelona. 
+
 
 Process
 =======
@@ -123,5 +124,5 @@ Flatdoc offers a few harmless, unobtrusive extras that come in handy in building
 documentation sites.
 
 
-<img src="images/flatdoc.jpg" width=100% id="logo" alt="logo">
+<img src="images/ips.png" width=100% id="logo" alt="logo">
 <img src="images/peu.png" width=100% id="peu" alt="peu">
